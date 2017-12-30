@@ -1,29 +1,30 @@
 package org.vistula.customer;
 
 import org.junit.Test;
-import static org.assertj.core.api.Assertions.assertThat;
+import static org.junit.Assert.assertTrue;
 
 
 public class CustomerTest {
 
+    //ZADANIE 2
 
     @Test
     public void shouldBeMature(){
         Customer Pawel = new Customer();
         Pawel.setAge(19);
-        assertThat(Pawel.isMature()).isTrue();
+        assertTrue(Pawel.isMature());
     }
     @Test
     public void shouldBeMature2(){
         Customer Lukasz = new Customer();
         Lukasz.setAge(18);
-        assertThat(Lukasz.isMature()).isTrue();
+        assertTrue(Lukasz.isMature());
     }
     @Test
-    public void shouldNotBeMature(){
-        Customer Stefan = new Customer();
-        Stefan.setAge(17);
-        assertThat(Stefan.isMature()).isFalse();
+        public void shouldNotBeMature(){
+            Customer Stefan = new Customer();
+            Stefan.setAge(17);
+            assertTrue(Stefan.isImmature());
     }
 
 

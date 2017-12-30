@@ -1,6 +1,6 @@
 package org.vistula.basket;
 
-import java.util.List;
+
 
 public class BasketItem {
 
@@ -8,6 +8,7 @@ public class BasketItem {
     private float price;
     boolean ageRestrictedItem;
 
+    // ZADANIE 1
 
     public BasketItem(String name, float price, boolean ageRestrictedItem) {
         this.name = name;
@@ -15,11 +16,9 @@ public class BasketItem {
         this.ageRestrictedItem = ageRestrictedItem;
     }
 
-
     public void setName(String name) {
         this.name = name;
     }
-
 
     public String getName() {
         return name;
@@ -43,12 +42,6 @@ public class BasketItem {
     public void setAgeRestrictedItem(boolean ageRestrictedItem) {
         this.ageRestrictedItem = ageRestrictedItem;
     }
-
-
-
-
-
-
 
 
 }

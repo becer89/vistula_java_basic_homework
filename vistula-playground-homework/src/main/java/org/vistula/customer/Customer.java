@@ -11,6 +11,7 @@ public class Customer {
     private int age;
     private List<BasketItem> basket;
 
+    // ZADANIE 1
 
     public Customer(String firstName, String lastName, int age, List<BasketItem> basket) {
         this.firstName = firstName;
@@ -55,6 +56,7 @@ public class Customer {
         this.basket = basket;
     }
 
+    // ZADANIE 2
     public boolean isMature(){
         if (age>=18){
             return true;
@@ -63,7 +65,7 @@ public class Customer {
             return false;
         }}
 
-    public boolean isInMature(){
+    public boolean isImmature(){
         if (age<18){
             return true;
         }
@@ -72,9 +74,6 @@ public class Customer {
         }
 
     }
-    public void totalCost(){
 
-
-    }
 
 }
